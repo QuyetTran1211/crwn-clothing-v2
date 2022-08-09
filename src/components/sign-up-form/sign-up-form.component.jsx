@@ -40,6 +40,8 @@ const SignUpForm = () => {
         password
       );
 
+      // console.log(user);
+
       await createUserDocumentFromAuth(user, { displayName });
       resetFormFields();
     } catch (error) {
